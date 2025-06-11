@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scott Woodhouse | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div id="header-line"></div>
+
+        <div id="header-flex">
+            <table id="header-table" class="header-flex-item">
+                <tr>
+                    <td rowspan="2">
+                        <img id="header-logo" src="images/woodhouse-logo-white.png" >
+                    </td>
+                    <td id="header-title" valign="bottom">
+                        Scott Woodhouse
+                    </td>
+                </tr>
+                <tr>
+                    <td id="header-subtitle" valign="top">
+                        Software Developer
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div id="header-nav-container">
+            <a class="header-a" href="#about-section">
+                <div class="header-nav-btn">About</div>
+            </a>
+            <a class="header-a" href="#projects-section">
+                <div class="header-nav-btn">Projects</div>
+            </a>
+            <a class="header-a" href="#contact-section">
+                <div class="header-nav-btn">Contact</div>
+            </a>
+        </div>
+
+    </header>
+
+    <!-- About -->
+    <section id="about-section">
+        <div class="section-container">
+            <h2>About Me</h2>
+            <p>I'm Scott Woodhouse, a self taught developer, enrolled in <a href="https://humber.ca/" target="_blank">Humber Polytechnics</a> computer programming course.<br>
+               I'm interested in developing useful, optimized software.<br>
+               Whether it's an internal tool or an app released to the public, I find it extremely rewarding to develop software that others find beneficial and user friendly.<br><br>
+               I've always been drawn to software development, the ability to create something from nothing and share it with the world is exciting.<br>
+               Create a useful app or an entertaining game and it could be downloaded by thousands of differnt people that you will never even meet.<br><br>
+               I've developed many skillsets over the years.</p>
+
+               <ul>
+                <li> Released a QT application written in C++ and QML</li>
+                <li> Utilized the Godot game engine and published my own app on both the Apple App store & The Google Play store</li>
+                <li> Developed native android applications written in Java</li>
+                <li> Created an internal tool using PHP, CSS, HTML & JavaScript that connects to the Epicor ERP API</li>
+                <li> Many More...</li>
+               </ul>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects-section">
+        <div class="section-container">
+            <h2>My Projects</h2>
+
+            <table class="projects-table">
+                <tr>
+                    <td rowspan="2" class="project-icon-td">
+                        <img class="project-icon" src="images/project-icon.webp">
+                    </td>
+                    <td class="projects-title" valign="top">
+                        Project 1
+                    </td>
+                </tr>
+                <tr>
+                    <td class="projects-text" valign="top">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </td>
+                </tr>
+            </table>
+
+            <table class="projects-table">
+                <tr>
+                    <td rowspan="2" class="project-icon-td">
+                        <img class="project-icon" src="images/project-icon.webp">
+                    </td>
+                    <td class="projects-title" valign="top">
+                        Project 2
+                    </td>
+                </tr>
+                <tr>
+                    <td class="projects-text" valign="top">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </td>
+                </tr>
+            </table>
+                
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact-section">
+        <div class="section-container">
+            <h2>Contact Me</h2>
+
+            <div id="contact-container">
+                <form id="contact-form" action="#" method="POST">
+                    <label class="input-label" for="firstname">Name:</label>
+                    <input id="firstname" class="input-field" name="firstname" type="text">
+                    <br>
+                    <br>
+
+                    <label class="input-label" for="email">Email:</label>
+                    <input id="email" class="input-field" name="email" type="email">
+                    <br>
+                    <br>
+
+                    <label class="input-label" for="message">Message:</label>
+                    <br>
+                    <textarea id="message" class="input-field" name="message" type="text" rows="4" cols="40"></textarea>
+                    <br>
+                    <br>
+
+                    <div id="contact-btn">Submit</div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p id="footer-text">&copy; 2025 Scott Woodhouse. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
