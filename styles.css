@@ -6,6 +6,7 @@
 
 body{
     margin: 0px;
+    background-color: #ffffff;
     
     /* Google Fonts */
     font-family: "Outfit", sans-serif;
@@ -89,6 +90,8 @@ h2{
 /* Sections */
 section{
     padding: 5px;
+    box-shadow: 0px 5px 10px rgb(159 159 159);
+    border-radius: 5px;
 }
 
 .section-container{
@@ -136,7 +139,7 @@ section{
 
 /* Contant */
 #contact-section{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 #contact-container{
@@ -185,10 +188,34 @@ section{
     background: var(--base-color-dark);
     font-weight: bold;
     color: #ffffff;
-    padding-top: 5px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
 #footer-text{
     margin: 0px;
     padding: 10px;
+}
+
+/* Portrait */
+@media (max-width: 600px) {
+
+    #header-nav-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .project-icon-td{
+        width: 150px;
+    }
+
+    .project-icon{
+        max-height: 150px;
+        margin-right: 10px;
+    }
 }
