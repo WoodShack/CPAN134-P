@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scott Woodhouse | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -77,37 +78,73 @@
         <div class="section-container">
             <h2>My Projects</h2>
 
-            <table class="projects-table">
-                <tr>
-                    <td rowspan="2" class="project-icon-td">
-                        <img class="project-icon" src="images/project-icon.webp">
-                    </td>
-                    <td class="projects-title" valign="top">
-                        Project 1
-                    </td>
-                </tr>
-                <tr>
-                    <td class="projects-text" valign="top">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </td>
-                </tr>
-            </table>
+            <!-- Projects minimized -->
+             <div id="projects-minimized-container">
+                <div id="projects-minimized-1" class="projects-minimized-item">
+                    <div id="expand-btn-1" class="projects-minimized-btn">Show Details</div>
+                </div>
 
-            <table class="projects-table">
-                <tr>
-                    <td rowspan="2" class="project-icon-td">
-                        <img class="project-icon" src="images/project-icon.webp">
-                    </td>
-                    <td class="projects-title" valign="top">
-                        Project 2
-                    </td>
-                </tr>
-                <tr>
-                    <td class="projects-text" valign="top">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </td>
-                </tr>
-            </table>
+                <div id="projects-minimized-2" class="projects-minimized-item">
+                    <div id="expand-btn-2" class="projects-minimized-btn">Show Details</div>
+                </div>
+
+                <div id="projects-minimized-2" class="projects-minimized-item">
+                    <div id="expand-btn-3" class="projects-minimized-btn">Show Details</div>
+                </div>
+             </div>
+
+            <!-- Projects Expanded -->
+            <div id="projects-expanded-container">
+                <table id="projects-expanded-1" class="projects-table">
+                    <tr>
+                        <td rowspan="2" class="project-icon-td">
+                            <img class="project-icon" src="images/project-icon.webp">
+                        </td>
+                        <td class="projects-title" valign="top">
+                            Project 1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="projects-text" valign="top">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </td>
+                    </tr>
+                </table>
+
+                <table id="projects-expanded-2" class="projects-table">
+                    <tr>
+                        <td rowspan="2" class="project-icon-td">
+                            <img class="project-icon" src="images/project-icon.webp">
+                        </td>
+                        <td class="projects-title" valign="top">
+                            Project 2
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="projects-text" valign="top">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </td>
+                    </tr>
+                </table>
+
+                <table id="projects-expanded-3" class="projects-table">
+                    <tr>
+                        <td rowspan="2" class="project-icon-td">
+                            <img class="project-icon" src="images/project-icon.webp">
+                        </td>
+                        <td class="projects-title" valign="top">
+                            Project 3
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="projects-text" valign="top">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </td>
+                    </tr>
+                </table>
+
+                <div id="projects-close-btn">Close</div>
+            </div>
                 
         </div>
     </section>
