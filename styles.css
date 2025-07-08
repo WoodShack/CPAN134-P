@@ -148,11 +148,22 @@ section{
 .projects-minimized-item{
     width: 270px;
     height: 300px;
-    background-image: url("images/project-icon.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+#projects-minimized-1{
+    background-image: url("images/project-1.webp");
+}
+
+#projects-minimized-2{
+    background-image: url("images/project-2.webp");
+}
+
+#projects-minimized-3{
+    background-image: url("images/project-3.webp");
 }
 
 .projects-minimized-btn{
