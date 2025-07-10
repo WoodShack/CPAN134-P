@@ -87,6 +87,10 @@ h2{
     text-decoration: none;
 }
 
+.typed-cursor{
+    font-size: 48px;
+}
+
 /* Sections */
 section{
     padding: 5px;

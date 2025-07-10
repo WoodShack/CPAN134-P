@@ -110,3 +110,9 @@ formBtn.addEventListener('click', () => {
         formSuccess.style.display = 'block';
     }
 });
+
+//Bonus
+var typed = new Typed('#header-title', {
+    strings: ['Scott Woodhouse'],
+    typeSpeed: 50,
+});
