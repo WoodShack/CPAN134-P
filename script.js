@@ -5,6 +5,9 @@ const projectExpand1Btn =  document.getElementById('expand-btn-1');
 const projectExpand2Btn =  document.getElementById('expand-btn-2');
 const projectExpand3Btn =  document.getElementById('expand-btn-3');
 const projectCloseBtn = document.getElementById('projects-close-btn');
+const formBtn = document.getElementById('contact-btn');
+const formError = document.getElementById('contact-error');
+const formSuccess = document.getElementById('contact-success');
 
 //Functions
 function expandProject(num){
@@ -24,6 +27,63 @@ function minimizeProjects(){
     projectsMinContainer.style.display = 'flex';
 }
 
+function showError(errorMsg){
+    formError.style.display = 'block';
+    errorMsg = "<b>Error:</b> "+errorMsg;
+    formError.innerHTML += errorMsg;
+}
+
+function validName(){
+    let name = document.getElementById('firstname').value;
+    if(name.length < 3){
+        showError("Your name must be at least three characters long!");
+        return false;
+    }
+
+    if(name.length > 100){
+        showError("Your name must be less than 100 characters long!");
+        return false;
+    }
+
+    return true;
+}
+
+function validEmail(){
+    let emailInput = document.getElementById('email');
+    let email = emailInput.value;
+    if(email.length < 3){
+        showError("Your email must be at least three characters long!");
+        return false;
+    }
+
+    if(email.length > 100){
+        showError("Your email must be less than 100 characters long!");
+        return false;
+    }
+
+    if(!emailInput.checkValidity()) {
+        showError("Your email is invalid!");
+        return false;
+    }
+
+    return true;
+}
+
+function validMessage(){
+    let message = document.getElementById('message').value;
+    if(message.length < 3){
+        showError("Your message must be at least three characters long!");
+        return false;
+    }
+
+    if(email.length > 1000){
+        showError("Your message must be less than 1000 characters long!");
+        return false;
+    }
+
+    return true;
+}
+
 //Event listeners
 projectExpand1Btn.addEventListener('click', () => {
     expandProject(1);
@@ -39,4 +99,14 @@ projectExpand3Btn.addEventListener('click', () => {
 
 projectCloseBtn.addEventListener('click', () => {
     minimizeProjects();
+});
+
+formBtn.addEventListener('click', () => {
+    formSuccess.style.display = 'none';
+    formError.innerHTML = "";
+    
+    if(validName() && validEmail() && validMessage()){
+        formError.style.display = 'none';
+        formSuccess.style.display = 'block';
+    }
 });

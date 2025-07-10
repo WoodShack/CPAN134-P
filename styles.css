@@ -211,9 +211,33 @@ section{
 
 #contact-container{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+}
+
+#contact-error{
+    display: none;
+    width: 400px;
+    background-color: #ff9999;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#contact-success{
+    display: none;
+    width: 400px;
+    background-color: #1f6f304D;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 #contact-btn{
