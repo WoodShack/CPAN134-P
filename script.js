@@ -76,7 +76,7 @@ function validMessage(){
         return false;
     }
 
-    if(email.length > 1000){
+    if(message.length > 1000){
         showError("Your message must be less than 1000 characters long!");
         return false;
     }
@@ -104,7 +104,7 @@ projectCloseBtn.addEventListener('click', () => {
 formBtn.addEventListener('click', () => {
     formSuccess.style.display = 'none';
     formError.innerHTML = "";
-    
+
     if(validName() && validEmail() && validMessage()){
         formError.style.display = 'none';
         formSuccess.style.display = 'block';
