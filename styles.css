@@ -120,6 +120,8 @@ section{
     border-collapse: collapse;
     background: #9db5a2;
     display: none;
+    border: 5px solid #485f4d;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .projects-title{
@@ -127,14 +129,32 @@ section{
     height: 30px;
     margin-bottom: 10px;
     font-size: 30px;
+    padding-left: 10px;
 }
 
 .projects-text{
     font-size: 18px;
+    padding-left: 10px;
 }
 
 .project-icon-td{
     width: 300px;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#project-expanded-img-1{
+    background-image: url("images/project-1.webp");
+}
+
+#project-expanded-img-2{
+    background-image: url("images/project-2.webp");
+}
+
+#project-expanded-img-3{
+    background-image: url("images/project-3.webp");
 }
 
 #projects-minimized-container{
@@ -152,6 +172,8 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    border: 5px solid #485f4d;
+    border-radius: 5px;
 }
 
 #projects-minimized-1{
