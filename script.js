@@ -9,6 +9,7 @@ const formBtn = document.getElementById('contact-btn');
 const formError = document.getElementById('contact-error');
 const formSuccess = document.getElementById('contact-success');
 const projectFilterSelect = document.getElementById('project-filter');
+const darkModeBtn = document.getElementById('dark-mode-btn');
 
 //Functions
 function expandProject(num){
@@ -156,5 +157,15 @@ projectFilterSelect.addEventListener('change', function () {
             minProject2.style.display = "none";
             minProject3.style.display = "block";
             break;
+    }
+});
+
+//Dark mode
+darkModeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    if(document.body.classList.contains('dark-mode')) {
+        darkModeBtn.textContent = "Light Mode";
+    } else {
+        darkModeBtn.textContent = "Dark Mode";
     }
 });
