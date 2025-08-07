@@ -8,6 +8,7 @@ const projectCloseBtn = document.getElementById('projects-close-btn');
 const formBtn = document.getElementById('contact-btn');
 const formError = document.getElementById('contact-error');
 const formSuccess = document.getElementById('contact-success');
+const projectFilterSelect = document.getElementById('project-filter');
 
 //Functions
 function expandProject(num){
@@ -16,6 +17,7 @@ function expandProject(num){
     projectsMinContainer.style.display = 'none';
     projectsExpandContainer.style.display = 'block';
     selectedProject.style.display = 'block';
+    projectFilterSelect.style.display = 'none';
 }
 
 function minimizeProjects(){
@@ -25,6 +27,7 @@ function minimizeProjects(){
 
     projectsExpandContainer.style.display = 'none';
     projectsMinContainer.style.display = 'flex';
+    projectFilterSelect.style.display = '';
 }
 
 function showError(errorMsg){
@@ -128,4 +131,30 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
     }
   });
+});
+
+//Project filter
+projectFilterSelect.addEventListener('change', function () {
+    const selectedValue = this.value;
+    const minProject1 = document.getElementById('projects-minimized-1');
+    const minProject2 = document.getElementById('projects-minimized-2');
+    const minProject3 = document.getElementById('projects-minimized-3');
+
+    switch (selectedValue) {
+        case "0":
+            minProject1.style.display = "block";
+            minProject2.style.display = "block";
+            minProject3.style.display = "block";
+            break;
+        case "1":
+            minProject1.style.display = "block";
+            minProject2.style.display = "block";
+            minProject3.style.display = "none";
+            break;
+        case "2":
+            minProject1.style.display = "none";
+            minProject2.style.display = "none";
+            minProject3.style.display = "block";
+            break;
+    }
 });
