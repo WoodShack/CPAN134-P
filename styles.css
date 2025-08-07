@@ -7,6 +7,7 @@
 body{
     margin: 0px;
     background-color: #ffffff;
+    transition: background-color 0.3s ease;
     
     /* Google Fonts */
     font-family: "Outfit", sans-serif;
@@ -15,9 +16,17 @@ body{
     font-style: normal;
 }
 
+body.dark-mode{
+    background-color: #000f0f;
+}
+
 h2{
     color: var(--text-color);
     font-size: 24px;
+}
+
+body.dark-mode h2{
+    color: #2a6b4a;
 }
 
 /* Header */
@@ -29,6 +38,10 @@ h2{
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #000000;
+}
+
+body.dark-mode .header{
+    color: #52bd87;
 }
 
 #header-flex{
@@ -73,7 +86,7 @@ h2{
 
 .header-nav-btn{
     font-size: 18px;
-    width: 100px;
+    width: 150px;
     padding: 20px;
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0.3);
@@ -92,11 +105,25 @@ h2{
     font-size: 48px;
 }
 
+#dark-mode-btn{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#dark-mode-btn:hover{
+    cursor: pointer;
+}
+
 /* Sections */
 section{
     padding: 5px;
     box-shadow: 0px 5px 10px rgb(159 159 159);
+    transition: box-shadow 0.3s ease;
     border-radius: 5px;
+}
+
+body.dark-mode section{
+    box-shadow: 0px 5px 10px rgb(0 0 0);
 }
 
 .section-container{
@@ -106,6 +133,10 @@ section{
 /* About */
 #about-section{
     color: var(--text-color);
+}
+
+body.dark-mode #about-section{
+    color: #2a6b4a;
 }
 
 /* Projects */
@@ -291,6 +322,10 @@ section{
     color: var(--text-color);
 }
 
+body.dark-mode .input-label{
+    color: #2a6b4a;
+}
+
 .input-field{
     min-width: 200px;
     padding: 5px;
@@ -299,6 +334,11 @@ section{
     color: var(--text-color);
     border: 3px solid #627b6e;
     border-radius: 5px;
+}
+
+body.dark-mode .input-field{
+    color: #2a6b4a;
+    background-color: #092c19;
 }
 
 /* Footer */
@@ -311,6 +351,10 @@ section{
     position: fixed;
     left: 0;
     bottom: 0;
+}
+
+body.dark-mode .footer{
+    color: #2a6b4a;
 }
 
 #footer-text{
@@ -329,6 +373,12 @@ section{
     min-width: 100px;
     border: 5px solid #485f4d;
     border-radius: 5px;
+}
+
+body.dark-mode #project-filter{
+    background-color: #092c19;
+    color: #2a6b4a;
+    border: 5px solid #105730;
 }
 
 /* Portrait */
