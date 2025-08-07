@@ -116,3 +116,16 @@ var typed = new Typed('#header-title', {
     strings: ['Scott Woodhouse'],
     typeSpeed: 50,
 });
+
+//Add smooth scrolling to all anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  });
+});
