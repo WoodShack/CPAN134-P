@@ -150,7 +150,7 @@ section{
 }
 
 #project-expanded-img-1{
-    background-image: url("images/project-1.webp");
+    background-image: url("images/project-1.png");
 }
 
 #project-expanded-img-2{
@@ -181,7 +181,7 @@ section{
 }
 
 #projects-minimized-1{
-    background-image: url("images/project-1.webp");
+    background-image: url("images/project-1.png");
 }
 
 #projects-minimized-2{
@@ -328,7 +328,7 @@ section{
     }
 
     .project-icon-td{
-        width: 150px;
+        width: 200px;
     }
 
     .project-icon{
