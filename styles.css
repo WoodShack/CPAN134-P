@@ -77,6 +77,7 @@ h2{
     padding: 20px;
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0.3);
+    transition: background-color 0.3s ease;
 }
 
 .header-nav-btn:hover{
@@ -204,6 +205,7 @@ section{
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 10px;
+    transition: background-color 0.3s ease;
 }
 
 .projects-minimized-btn:hover{
@@ -274,6 +276,7 @@ section{
     padding: 20px;
     color: var(--text-color);
     background-color: rgba(187, 212, 192, 0.8);
+    transition: background-color 0.3s ease;
 }
 
 #contact-btn:hover{
